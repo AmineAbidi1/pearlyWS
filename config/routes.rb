@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       get 'getRooms', to: 'rooms#index'
       get 'getStatuses', to: 'rooms#get_statuses'
+      post 'bookRoom', to: 'rooms#book'
     end
   end
 end

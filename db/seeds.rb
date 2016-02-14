@@ -1,4 +1,5 @@
 Room.delete_all
+User.delete_all
 
 Room.create!([
   {id: 1, title: "Xberg", description: "VC equipped meeting room in the second floor", image: "https://liquidspace.com/Content/Images/SEONew/final-conference-rooms.png", capacity: 8},
@@ -7,3 +8,5 @@ Room.create!([
   {id: 4, title: "Lublin", description: "Big meeting room in the third floor", image: "https://liquidspace.com/Content/Images/SEONew/final-conference-rooms.png", capacity: 5},
   {id: 5, title: "Sidibou", description: "Big meeting room in the first floor", image: "https://liquidspace.com/Content/Images/SEONew/final-conference-rooms.png", capacity: 2},
 ])
+
+User.create!(id:1, nickname: "Amine", phoneNumber: "+491603611759", sparkID: "Amine")

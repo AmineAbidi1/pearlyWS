@@ -4,5 +4,6 @@ class Api::V1::RoomsController < ApplicationController
 	end
 
 	def get_statuses
+		@reservations = Reservation.all
 	end
 end

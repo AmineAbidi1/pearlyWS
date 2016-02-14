@@ -1,7 +1,9 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Room.delete_all
+
+Room.create!([
+  {id: 1, title: "Xberg", description: "VC equipped meeting room in the second floor", image: "https://liquidspace.com/Content/Images/SEONew/final-conference-rooms.png", capacity: 8},
+  {id: 2, title: "F'Hain", description: "Big meeting room in the first floor", image: "https://liquidspace.com/Content/Images/SEONew/final-conference-rooms.png", capacity: 15},
+  {id: 3, title: "Charlottenburg", description: "Samller meeting room in the first floor", image: "https://liquidspace.com/Content/Images/SEONew/final-conference-rooms.png", capacity: 10},
+  {id: 4, title: "Lublin", description: "Big meeting room in the third floor", image: "https://liquidspace.com/Content/Images/SEONew/final-conference-rooms.png", capacity: 5},
+  {id: 5, title: "Sidibou", description: "Big meeting room in the first floor", image: "https://liquidspace.com/Content/Images/SEONew/final-conference-rooms.png", capacity: 2},
+])

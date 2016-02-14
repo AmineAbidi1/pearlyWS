@@ -21,7 +21,7 @@ class Room < ActiveRecord::Base
 	end
 
 	def current_reservation
-		self.reservations.min_by{ |r| DateTime.now.to_i - r.start_time }
+		self.reservations.min_by{ |r| DateTime.now.to_i - r.start_time.to_i }
 	end
 
 	def next_reservation
